@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Палитра цветов</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">Пэт-проект: Палитра цветов</header>
+
+    <main class="main">
+
+      <section class="main__palete palete">
+        <div class="palete__left">
+          <div class="palete__palete" id="palete">
+            <span class="palete-draggable"></span>
+          </div>
+          <div class="palete__transparent" id="transparent">
+            <span class="palete-draggable"></span>
+          </div>
+        </div>
+        <div class="palete__spectrume" id="spectrume">
+          <span class="palete-draggable"></span>
+        </div>
+      </section>
+
+      <section class="main__info info">
+        <div class="info__color color">
+          <div class="color__block" id="info-color"></div>
+          <p class="color__opacity">
+            <span>Непрозрачность:</span>
+            <span id="info-opacity">100%</span>
+          </p>
+        </div>
+        <ul class="info__codes">
+          <li class="info__code code">
+            <h3 class="code__name">HEX:</h3>
+            <input id="hex" type="button" class="code__value" value="bd9226">
+          </li>
+          <li class="info__code code">
+            <h3 class="code__name">RGB:</h3>
+            <input id="rgb" type="button" class="code__value" value="rgb(189, 146, 38)">
+          </li>
+          <li class="info__code code">
+            <h3 class="code__name">HSL:</h3>
+            <input id="hsl" type="button" class="code__value" value="hsl(43, 67%, 45%)">
+          </li>
+        </ul>
+      </section>
+
+    </main>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
