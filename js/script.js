@@ -268,19 +268,43 @@ function changeTransparent(x, draggable) {
 
 function updateTransparent() {
   const defaultBg = `url('./img/transparent.png') 0 0 / 180px repeat`;
-  const computedGradient = `linear-gradient(to right, hsla(${globalHue}, ${globalSaturation}%, ${globalLightness}%, 0) 0%, hsl(${globalHue}, ${globalSaturation}%, ${globalLightness}%, ${
-    globalTransparent / 100
-  }) 100%)`;
+  const computedGradient = `
+    linear-gradient(
+      to right,
+      hsla(
+        ${globalHue},
+        ${globalSaturation}%,
+        ${globalLightness}%, 0
+      ) 0%,
+      hsl(
+        ${globalHue},
+        ${globalSaturation}%,
+        ${globalLightness}%
+      ) 100%
+    )
+  `;
   transparent.style.background = computedGradient + ',' + defaultBg;
 }
 
 function updateColorBlock() {
   const defaultBg = `url('./img/transparent.png') center / cover no-repeat`;
-  const computedGradient = `linear-gradient(to top, hsla(${globalHue}, ${globalSaturation}%, ${globalLightness}%, ${
-    globalTransparent / 100
-  }) 0%, hsla(${globalHue}, ${globalSaturation}%, ${globalLightness}%, ${
-    globalTransparent / 100
-  }) 100%)`;
+  const computedGradient = `
+    linear-gradient(
+      to top,
+      hsla(
+        ${globalHue},
+        ${globalSaturation}%,
+        ${globalLightness}%,
+        ${globalTransparent / 100}
+      ) 0%,
+      hsla(
+        ${globalHue},
+        ${globalSaturation}%,
+        ${globalLightness}%,
+        ${globalTransparent / 100}
+      ) 100%
+    )
+  `;
   colorBlock.style.background = computedGradient + ',' + defaultBg;
 }
 
