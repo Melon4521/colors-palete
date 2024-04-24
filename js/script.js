@@ -138,7 +138,7 @@ document.addEventListener('pointerdown', function (event) {
         const x = clientX - transparent.getBoundingClientRect().left;
         let left;
 
-        if (x < 0) {
+        if (x - shiftX < 0) {
           left = 0;
         } else if (
           x - shiftX >

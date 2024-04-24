@@ -125,6 +125,26 @@ body {
   cursor: grabbing;
 }
 
+@media (max-width: 500px) {
+  .palete__spectrume {
+    flex: 0 0 35px;
+  }
+
+  .palete__transparent {
+    height: 35px;
+  }
+}
+
+@media (max-width: 425px) {
+  .palete__spectrume {
+    flex: 0 0 30px;
+  }
+
+  .palete__transparent {
+    height: 30px;
+  }
+}
+
 /* </PALETE>============================================================================== */
 
 /* <INFO>============================================================================== */
